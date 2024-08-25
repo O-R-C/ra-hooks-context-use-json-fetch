@@ -9,7 +9,7 @@ export default function Item({ url }) {
 
   if (isLoading) return <Loader />
 
-  return <div className={styles.item + (error ? ' ' + styles.error : '')}>{data?.status || error.message}</div>
+  return <div className={styles.item + (error ? ' ' + styles.error : '')}>{data?.status || error?.message}</div>
 }
 
 Item.propTypes = {
